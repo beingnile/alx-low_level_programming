@@ -8,22 +8,22 @@
 
 int main(void)
 {
-	int num1, num2;
+	int n, m;
 
-	for (num1 = 0; num1 < 10; num1++)
+	n = m = '0';
+
+	for (n = '0'; n <= '9'; n++)
 	{
-		for (num2 = 0; num2 < 10; num2++)
+		for (m = '0'; m <= '9'; m++)
 		{
-			putchar((num1 % 10) + '0');
-			putchar((num2 % 10) + '0');
+			putchar(n);
+			putchar(m);
 
-			if (num1 == 9 && num2 == 9)
+			if ((n != '9') || (n == '9' && m != '9'))
 			{
-				continue;
+				putchar(',');
+				putchar(' ');
 			}
-
-			putchar(',');
-			putchar(' ');
 		}
 	}
 
