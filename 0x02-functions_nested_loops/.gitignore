@@ -1,5 +1,5 @@
-_*
-files
-0-holberton
-1-alphabet
-*-main*
+*
+!*.c
+!*.h
+!*.md
+1-main.c
