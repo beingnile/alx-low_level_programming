@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * int _islower = Checks if an input is a lowercase letter.
+ * _islower - Checks if an input is a lowercase letter.
  *
+ * c - Argument passed to function.
+ *
+ * Return: 1 if lower otherwise, 0.
  */
 
 int _islower(int c)
