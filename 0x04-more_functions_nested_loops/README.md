@@ -1,6 +1,6 @@
 # More functions and nested loops.
 
-This project is a continuation of the project [0x02-functions_nested_loops] (https://github.com/beingnile/alx-low_level_programming/tree/main/0x02-functions_nested_loops).
+This project is a continuation of the project [0x02-functions_nested_loops](https://github.com/beingnile/alx-low_level_programming/tree/main/0x02-functions_nested_loops).
 
 Besides nested loops and functions, it explores how to create a custom header file and how to use it in your code.
 
