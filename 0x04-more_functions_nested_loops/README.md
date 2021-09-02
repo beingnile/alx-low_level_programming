@@ -64,11 +64,11 @@ It's basically the `function_name` and the `parameters` together.
 
 The project files are all written in C and compiled using gcc.
 
-### * Files used for testing code. *
+### Files used for testing code.
 
-> These are the files used to test respective codes containing functions.
-> They are in the syntax `function code - file`.
-> Use `gcc -Wall -pedantic -Werror -Wextra -std=gnu89` to compile code.
+> These are the files used to test respective codes containing functions.  
+> They are in the syntax `function code - file`.  
+> Use `gcc -Wall -pedantic -Werror -Wextra -std=gnu89` to compile code.  
 > Example:
 
 ```c
