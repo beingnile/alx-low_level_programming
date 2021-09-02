@@ -71,7 +71,7 @@ The project files are all written in C and compiled using gcc.
 > Use `gcc -Wall -pedantic -Werror -Wextra -std=gnu89` to compile code.  
 > Example:
 
-```c
+```sh
 
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-isupper.c -o 0-isupper.
 
@@ -79,3 +79,4 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-isupper.c -o 0-isupper
 
 * `0-isupper.c` - `0-main.c`
 * `1-isdigit.c` - `1-main.c`
+* `2-mul.c` - `2-main.c`
