@@ -11,7 +11,7 @@ Besides nested loops and functions, it explores how to create a custom header fi
 Nested loops are basically loops inside loops.
 For Example, using while loops:
 
-```c
+```shell
 
 /* The first while loop nesting the second one */
 
