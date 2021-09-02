@@ -62,11 +62,20 @@ Where:
 The function prototype specifies what is given to a function and what is expected from it.  
 It's basically the `function_name` and the `parameters` together.
 
-The project files are all written in C.
+The project files are all written in C and compiled using gcc.
 
 ### * Files used for testing code. *
 
 > These are the files used to test respective codes containing functions.
 > They are in the syntax `function code - file`.
+> Use `gcc -Wall -pedantic -Werror -Wextra -std=gnu89` to compile code.
+> Example:
 
-* `0-isupper.c` - `0-main.c` 
+```c
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-isupper.c -o 0-isupper.
+
+```
+
+* `0-isupper.c` - `0-main.c`
+* `1-isdigit.c` - `1-main.c`
