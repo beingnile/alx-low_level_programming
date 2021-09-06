@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _atoi - Get the first integer from a string
  * @s: String
