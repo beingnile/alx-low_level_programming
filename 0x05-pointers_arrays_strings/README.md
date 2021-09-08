@@ -11,26 +11,26 @@ Below is a sample code to show how pointers work.
 
 ```c
 
-  1 #include <stdio.h>
-  2
-  3 /**
-  4  * main - Shows how pointers work.
-  5  *
-  6  * Return: Always 0.
-  7  */
-  8
-  9 int main(void)
- 10 {
- 11         int var = 9;
- 12         int *p = &var;
- 13         /*Here we have the declaration of a pointer p*/
- 14         /*We have then initialised it to hold the address of var*/
- 15
- 16         printf("The value of var: %d\n", var);
- 17         printf("The memory address var is stored at: %p\n", &var);
- 18         printf("The value of pointer p: %p\n", p);
- 19         return (0);
- 20 }
+#include <stdio.h>
+
+/**
+  * main - Shows how pointers work.
+  *
+  * Return: Always 0.
+  */
+
+ int main(void)
+ {
+         int var = 9;
+         int *p = &var;
+         /*Here we have the declaration of a pointer p*/
+         /*We have then initialised it to hold the address of var*/
+
+         printf("The value of var: %d\n", var);
+         printf("The memory address var is stored at: %p\n", &var);
+         printf("The value of pointer p: %p\n", p);
+         return (0);
+ }
 
 ```
 
