@@ -3,7 +3,7 @@
 /**
  * cap_string - Capitalize all words of a string.
  *
- * @str: The string to be capitalized.
+ * @a: Argument passed.
  *
  * Return: String pointer.
  */
@@ -26,7 +26,9 @@ char *cap_string(char *a)
 			c = 0;
 		}
 		else
+		{
 			c = 0;
+		}
 		i++;
 	}
 	return (a);
