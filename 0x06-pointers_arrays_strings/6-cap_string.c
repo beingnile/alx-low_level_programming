@@ -7,34 +7,27 @@
  *
  * Return: String pointer.
  */
-char *cap_string(char *str)
+char *cap_string(char *a)
 {
 	int i = 0;
+	int c = 0;
 
-	while (*(str + i))
+	while (*(a + i))
 	{
-		while (!(*(str + i) >= 'a' && *(str + i) >= 'z'))
+		if (*(a + i) == ',' || *(a + i) == ';' || *(a + i) == '.'
+		|| *(a + i) == '!' || *(a + i) == '?' || *(a + i) == '"'
+		|| *(a + i) == '(' || *(a + i) == ')' || *(a + i) == '\n'
+		|| *(a + i) == '{' || *(a + i) == '}' || *(a + i) == ' '
+		|| *(a + i) == '\t')
+			c = 1;
+		else if (*(a + i) >= 'a' && *(a + i) <= 'z' && (c == 1 || i == 0))
 		{
-			i++;
+			*(a + i) -= 32;
+			c = 0;
 		}
-		if (str[i - 1] == ' ' ||
-		    str[i - 1] == '\t' ||
-		    str[i - 1] == '\n' ||
-		    str[i - 1] == ',' ||
-		    str[i - 1] == ';' ||
-		    str[i - 1] == '.' ||
-		    str[i - 1] == '!' ||
-		    str[i - 1] == '?' ||
-		    str[i - 1] == '"' ||
-		    str[i - 1] == '(' ||
-		    str[i - 1] == ')' ||
-		    str[i - 1] == '{' ||
-		    str[i - 1] == '}' ||
-		    i == 0)
-		{
-			*(str + i) -= 32;
-		}
+		else
+			c = 0;
 		i++;
 	}
-	return (str);
+	return (a);
 }
