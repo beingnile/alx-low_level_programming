@@ -47,7 +47,7 @@ int check(char *s, int j, int i)
  *
  * Return: The length of string.
  */
-int find_strlen(char *s)
+int str_len(char *s)
 {
 	int j = 0;
 
