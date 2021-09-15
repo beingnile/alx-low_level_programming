@@ -20,4 +20,4 @@ A child couldn't sleep, so her mother told a story about a little frog,
 ```
   
   
-All the files in this project are written in C, test in ubuntu 20.04 LTS and compiled using gcc.
+All the files in this project are written in C, tested in ubuntu 20.04 LTS and compiled using gcc.
