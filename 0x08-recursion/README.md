@@ -1,6 +1,6 @@
 # Recursion.
 
-This project that looks into recursion and how to solve problems recursivelyrather than iteratively.
+This project that looks into recursion and how to solve problems recursively rather than iteratively.
 
 ## What exactly is recursion?
 
