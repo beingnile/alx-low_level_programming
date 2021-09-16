@@ -36,7 +36,7 @@ int check(char *s, int j, int i)
 	}
 	if (s[i] == s[j - i - 1])
 	{
-		return (check(s, j, i + 1);
+		return (check(s, j, i + 1));
 	}
 	return (0);
 }
