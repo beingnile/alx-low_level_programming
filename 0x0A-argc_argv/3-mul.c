@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	long int i;
 
 	if (argc == 1)
 	{
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	i = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", i);
+	printf("%ld\n", i);
 
 	return (0);
 }
