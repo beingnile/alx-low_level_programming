@@ -3,12 +3,13 @@
 
 int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * _strlen - Finds the length of a string.
  * @str: The string to be measured.
  *
- * Return: Length of the string.
+ * Return: The length of the string.
  */
 int _strlen(char *str)
 {
@@ -50,33 +51,33 @@ char *_strcopy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *woof;
+	dog_t *doggo;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	woof = malloc(sizeof(dog_t));
-	if (woof == NULL)
+	doggo = malloc(sizeof(dog_t));
+	if (doggo == NULL)
 		return (NULL);
 
-	woof->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (woof->name == NULL)
+	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (doggo->name == NULL)
 	{
-		free(woof);
+		free(doggo);
 		return (NULL);
 	}
 
-	woof->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (woof->owner == NULL)
+	doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (doggo->owner == NULL)
 	{
-		free(woof->name);
-		free(woof);
+		free(doggo->name);
+		free(doggo);
 		return (NULL);
 	}
 
-	woof->name = _strcopy(woof->name, name);
-	woof->age = age;
-	woof->owner = _strcopy(woof->owner, owner);
+	doggo->name = _strcopy(doggo->name, name);
+	doggo->age = age;
+	doggo->owner = _strcopy(doggo->owner, owner);
 
-	return (woof);
+	return (doggo);
 }
