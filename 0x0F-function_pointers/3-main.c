@@ -4,7 +4,7 @@
 
 /**
  * main - Prints the result of simple operations.
- * 
+ *
  * @argc: Number of arguments supplied.
  * @argv: Array of pointers to the arguments.
  *
