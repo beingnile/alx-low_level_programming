@@ -1,9 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - Prints a char.
- * @a: A list of arguments pointing to
- *       the character to be printed.
+ * print_char - prints a char
+ * @a: char to print
  */
 void print_char(va_list a)
 {
@@ -11,19 +10,17 @@ void print_char(va_list a)
 }
 
 /**
- * print_int - Prints an int.
- * @a: A list of arguments pointing to
- *       the integer to be printed.
+ * print_int - prints an int
+ * @a: int to print
  */
-void print_int(va_list a);
+void print_int(va_list a)
 {
 	printf("%d", va_arg(a, int));
 }
 
 /**
- * print_float - Prints a float.
- * @a: A list of arguments pointing to
- *       the float to be printed.
+ * print_float - prints a float
+ * @a: float to print
  */
 void print_float(va_list a)
 {
@@ -31,29 +28,25 @@ void print_float(va_list a)
 }
 
 /**
- * print_string - Prints a string.
- * @arg: A list of arguments pointing to
- *       the string to be printed.
+ * print_string - prints a char
+ * @a: string to print
  */
-void print_string(va_list arg)
+void print_string(va_list a)
 {
-	char *str;
+	char *current;
 
-	str = va_arg(arg, char *);
-
-	if (str == NULL)
+	current = va_arg(a, char *);
+	if (current == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
-
-	printf("%s", str);
+	printf("%s", current);
 }
 
 /**
- * print_all - Prints anything, followed by a new line.
- *
- * @format: A string of characters representing the argument types.
+ * print_all - prints all args passed to function
+ * @format: list of args to give data types.
  */
 void print_all(const char * const format, ...)
 {
