@@ -46,7 +46,7 @@ int power(int x, int y)
  * @b: Pointer to string of 0 and 1 chars.
  *
  * Return: The converted number, 0 if b is NULL.
- * 	   0 if there's one or more chars in b != 0 or 1.
+ *	   0 if there's one or more chars in b != 0 or 1.
  */
 unsigned int binary_to_uint(const char *b)
 {
