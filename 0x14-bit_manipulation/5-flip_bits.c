@@ -10,12 +10,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int toFlip = 0, xor_var = n ^ m;
+	unsigned long int xor = n ^ m, flip = 0;
 
-	while (xor_var > 0)
+	while (xor > 0)
 	{
-		toFlip += (xor_var & 1);
-		(xor_var >>= 1;
+		flip += (xor & 1);
+		xor >>= 1;
 	}
-	return (toFlip);
+
+	return (flip);
 }
