@@ -3,9 +3,10 @@
 /**
  * add_dnodeint - Add node at the beginningof list.
  *
- * @h: The linked list.
+ * @head: The linked list's first node.
+ * @n: Value to be stored in new node.
  *
- * Return: Address of new element.
+ * Return: Address of new element or NULL upon failure.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
