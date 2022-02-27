@@ -14,4 +14,6 @@ Covers conditional statements, arithmetic operators, logical operators and relat
 Loops are introduced in this project.
 
 * [0x02-functions_nested_loops](0x02-functions_nested_loops) 
-Introduces the concept of nested loops.
+Introduces the concept of nested loops. 
+
+* 
