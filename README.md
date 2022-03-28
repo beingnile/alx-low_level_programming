@@ -11,4 +11,9 @@ Covers the basics of C; writing and compiling C code
 
 * [0x01-variables_if_else_while](0x01-variables_if_else_while)
 Covers conditional statements, arithmetic operators, logical operators and relational operators.  
-Loops are introduced in ths project.
+Loops are introduced in this project.
+
+* [0x02-functions_nested_loops](0x02-functions_nested_loops) 
+Introduces the concept of nested loops. 
+
+* 
