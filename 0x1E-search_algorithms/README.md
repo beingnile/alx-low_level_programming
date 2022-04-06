@@ -6,3 +6,4 @@ The algorithms looked at are:
 * Jump search
 
 ## Getting started
+You can clone the repo and utilise or study the algorithms.
