@@ -11,13 +11,13 @@
 char *_strcat(char *dest, char *src)
 {
 	int index = 0;
-	/* Have variable for index in array initialized to 0*/
+	/* Get length of destination string */
 
 	while (*(dest + index))
 	{
 		index++;
 	}
-	while (*(src))
+	while (*src)
 	{
 		*(dest + index) = *(src);
 		index++;
