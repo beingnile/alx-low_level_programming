@@ -4,9 +4,7 @@
  * _strncat - Concatenate two strings with n bytes from src.
  *
  * @dest: String pointer receiving append.
- *
  * @src: String pointer to append.
- *
  * @n: Number of byte to be appended from src.
  *
  * Return: dest pointer.
