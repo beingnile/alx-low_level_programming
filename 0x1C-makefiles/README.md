@@ -1,3 +1,3 @@
 # C Makefiles
 
-In this project, I cover what a makefile is and fiddle around making makefiles.
+In the project, I build makefiles for the purpose of learning more about build systems.  
