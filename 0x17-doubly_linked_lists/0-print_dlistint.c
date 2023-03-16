@@ -9,15 +9,15 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-    unsigned int nodes = 0;
-    const dlistint_t *current = h;
+	unsigned int nodes = 0;
+	const dlistint_t *current = h;
 
-    while (current != NULL)
-    {
-        nodes++;
-        printf("%d\n", current->n);
-        current = current->next;
-    }
+	while (current != NULL)
+	{
+		nodes++;
+		printf("%d\n", current->n);
+		current = current->next;
+	}
 
-    return (nodes);
+	return (nodes);
 }
