@@ -24,10 +24,6 @@ int binary_search(int *array, size_t size, int value)
 
 	while (start <= end)
 	{
-		if (start == value)
-			return (start);
-		else if (end == value)
-			return (end);
 		print_array(array, start, end);
 		midpoint = ((start + end) / 2);
 		if (array[midpoint] == value)
