@@ -21,7 +21,7 @@ int jump_search(int *array, size_t size, int value)
 	block_last = 0;
 	start = 0;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 
 	for (i = 0; i < len; i += block)
